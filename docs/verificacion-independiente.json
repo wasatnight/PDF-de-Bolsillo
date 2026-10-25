@@ -1,0 +1,13 @@
+{
+  "estado": "correcto",
+  "lector_independiente": "pypdf (strict=True)",
+  "archivos": 16,
+  "paginas_abiertas": 35,
+  "orden_unir_extraer_separar_reordenar": "correcto",
+  "rotaciones_y_tamanos": "correcto",
+  "sha256_originales": "sin cambios",
+  "formulario_salida": {
+    "canonical_fields": [],
+    "widgets": 0
+  }
+}

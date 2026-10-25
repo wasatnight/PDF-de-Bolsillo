@@ -1,0 +1,33 @@
+<Window x:Class="PdfDeBolsillo.ExportWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:loc="clr-namespace:PdfDeBolsillo.Services"
+ Title="{loc:Loc ExportTitle}" Icon="Assets/App.ico" Width="560" SizeToContent="Height" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" FontFamily="Segoe UI Variable Text, Segoe UI" FontSize="13" Background="#FFFCF7" Foreground="#292B29">
+ <ScrollViewer MaxHeight="760" VerticalScrollBarVisibility="Auto">
+ <StackPanel Margin="28">
+  <TextBlock Text="{loc:Loc ExportTitle}" FontSize="22" FontWeight="SemiBold" Margin="0,0,0,18"/>
+  <TextBlock Text="{loc:Loc ExportMode}" Margin="0,0,0,6"/>
+  <ComboBox x:Name="Mode" SelectedIndex="0" Padding="9" SelectionChanged="ModeChanged">
+   <ComboBoxItem Content="{loc:Loc ModeMerge}"/><ComboBoxItem Content="{loc:Loc ModeExtract}"/>
+   <ComboBoxItem Content="{loc:Loc ModeSingle}"/><ComboBoxItem Content="{loc:Loc ModeRanges}"/>
+  </ComboBox>
+  <TextBlock Text="{loc:Loc RangeLabel}" Margin="0,18,0,6"/>
+  <TextBox x:Name="Ranges" Padding="9" ToolTip="{loc:Loc RangeTip}"/>
+  <TextBlock Text="{loc:Loc RangeTip}" Style="{StaticResource Muted}" Margin="0,7,0,0"/>
+  <TextBlock Text="{loc:Loc PrefixLabel}" Margin="0,18,0,6"/>
+  <TextBox x:Name="Prefix" Text="documento" Padding="9"/>
+  <Separator/>
+  <TextBlock Text="{loc:Loc ImageSettings}" FontWeight="SemiBold" Margin="0,0,0,10"/>
+  <ComboBox x:Name="SizeMode" SelectedIndex="0" Padding="8">
+   <ComboBoxItem Content="A4"/><ComboBoxItem Content="{loc:Loc FitImage}"/>
+  </ComboBox>
+  <CheckBox x:Name="Landscape" Content="{loc:Loc Landscape}" Margin="0,12,0,0"/>
+  <Grid Margin="0,12,0,0"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="100"/></Grid.ColumnDefinitions>
+   <TextBlock Text="{loc:Loc Margins}" VerticalAlignment="Center"/><TextBox x:Name="MarginInput" Grid.Column="1" Text="12" Padding="8"/>
+  </Grid>
+  <TextBlock Text="{loc:Loc ImageSettingsNote}" Style="{StaticResource Muted}" Margin="0,9,0,0"/>
+  <TextBlock x:Name="ErrorText" Foreground="#AD3E20" TextWrapping="Wrap" Margin="0,16,0,0" AutomationProperties.LiveSetting="Polite"/>
+  <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,22,0,0">
+   <Button Content="{loc:Loc Cancel}" IsCancel="True"/><Button Content="{loc:Loc ChooseDestination}" Style="{StaticResource Primary}" Click="ContinueClick" IsDefault="True"/>
+  </StackPanel>
+ </StackPanel>
+ </ScrollViewer>
+</Window>
+

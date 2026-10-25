@@ -1,0 +1,542 @@
+{
+  "T001": {
+    "Es": "TU MESA DE TRABAJO PARA DOCUMENTOS",
+    "En": "YOUR WORKSPACE FOR DOCUMENTS"
+  },
+  "T002": {
+    "Es": "Ayuda",
+    "En": "Help"
+  },
+  "T003": {
+    "Es": "Atajos y alcance de esta entrega",
+    "En": "Shortcuts and scope of this version"
+  },
+  "T004": {
+    "Es": "+  Abrir documentos",
+    "En": "+  Open documents"
+  },
+  "T005": {
+    "Es": "Abrir PDF, JPG y PNG",
+    "En": "Open PDFs, JPGs and PNGs"
+  },
+  "T006": {
+    "Es": "Restaurar ejemplo",
+    "En": "Reset sample"
+  },
+  "T007": {
+    "Es": "Recupera las seis páginas de muestra",
+    "En": "Restore the six sample pages"
+  },
+  "T008": {
+    "Es": "Deshacer · Ctrl+Z",
+    "En": "Undo · Ctrl+Z"
+  },
+  "T009": {
+    "Es": "Deshacer",
+    "En": "Undo"
+  },
+  "T010": {
+    "Es": "Rehacer · Ctrl+Y",
+    "En": "Redo · Ctrl+Y"
+  },
+  "T011": {
+    "Es": "Rehacer",
+    "En": "Redo"
+  },
+  "T012": {
+    "Es": "↻  Girar",
+    "En": "↻  Rotate"
+  },
+  "T013": {
+    "Es": "Girar 90° · Ctrl+R",
+    "En": "Rotate 90° · Ctrl+R"
+  },
+  "T014": {
+    "Es": "Mover antes · Alt+Izquierda",
+    "En": "Move earlier · Alt+Left"
+  },
+  "T015": {
+    "Es": "Mover antes",
+    "En": "Move earlier"
+  },
+  "T016": {
+    "Es": "Mover después · Alt+Derecha",
+    "En": "Move later · Alt+Right"
+  },
+  "T017": {
+    "Es": "Mover después",
+    "En": "Move later"
+  },
+  "T018": {
+    "Es": "Quitar",
+    "En": "Remove"
+  },
+  "T019": {
+    "Es": "Quitar de la composición · Supr",
+    "En": "Remove from composition · Delete"
+  },
+  "T020": {
+    "Es": "Páginas de la composición. Usa Control o Mayúsculas para seleccionar varias.",
+    "En": "Composition pages. Use Control or Shift to select multiple pages."
+  },
+  "T021": {
+    "Es": "Sin páginas",
+    "En": "No pages"
+  },
+  "T022": {
+    "Es": "Abre documentos o arrastra PDF e imágenes a esta ventana.",
+    "En": "Open documents or drag PDFs and images into this window."
+  },
+  "T023": {
+    "Es": "Cargar documentos de muestra",
+    "En": "Load sample documents"
+  },
+  "T024": {
+    "Es": "INSPECTOR",
+    "En": "INSPECTOR"
+  },
+  "T025": {
+    "Es": "EN LA COMPOSICIÓN",
+    "En": "IN THE COMPOSITION"
+  },
+  "T026": {
+    "Es": "Tamaño de muestra",
+    "En": "Sample size"
+  },
+  "T027": {
+    "Es": "Rotación",
+    "En": "Rotation"
+  },
+  "T028": {
+    "Es": "ORDEN DE SALIDA",
+    "En": "OUTPUT ORDER"
+  },
+  "T029": {
+    "Es": "Lee las páginas de izquierda a derecha y de arriba abajo.",
+    "En": "Read pages from left to right and top to bottom."
+  },
+  "T030": {
+    "Es": "Arrastra una página a otra posición, o usa las flechas de la barra.",
+    "En": "Drag a page to another position, or use the toolbar arrows."
+  },
+  "T031": {
+    "Es": "El original se queda contigo.",
+    "En": "Your original stays intact."
+  },
+  "T032": {
+    "Es": "Los cambios se aplican a una copia de salida.\n\nLos originales nunca se sobrescriben.",
+    "En": "Changes apply to an output copy.\n\nOriginals are never overwritten."
+  },
+  "T033": {
+    "Es": "PRIMERA ENTREGA VISUAL",
+    "En": "VISUAL PROTOTYPE"
+  },
+  "T034": {
+    "Es": "Unir · Separar · Extraer · Imágenes a PDF",
+    "En": "Merge · Split · Extract · Images to PDF"
+  },
+  "T035": {
+    "Es": "La importación y exportación se habilitarán después de tu revisión del diseño.",
+    "En": "Document import and export are coming in the next development stage."
+  },
+  "T036": {
+    "Es": "Exportar PDF  ↗",
+    "En": "Export PDF  ↗"
+  },
+  "T037": {
+    "Es": "Pendiente de implementar tras la aprobación visual",
+    "En": "Coming in the next development stage"
+  },
+  "T038": {
+    "Es": "Cerrar",
+    "En": "Close"
+  },
+  "T039": {
+    "Es": "Previsualización · PDF de Bolsillo",
+    "En": "Preview · PDF de Bolsillo"
+  },
+  "T040": {
+    "Es": "Cerrar previsualización · Esc",
+    "En": "Close preview · Esc"
+  },
+  "T041": {
+    "Es": "Página ampliada",
+    "En": "Enlarged page"
+  },
+  "T042": {
+    "Es": "Documento de muestra",
+    "En": "Sample document"
+  },
+  "T043": {
+    "Es": "Original · página {0}",
+    "En": "Original · page {0}"
+  },
+  "T044": {
+    "Es": "Rotación · {0}°",
+    "En": "Rotation · {0}°"
+  },
+  "T045": {
+    "Es": "Página original {0}",
+    "En": "Original page {0}"
+  },
+  "T046": {
+    "Es": "Selección múltiple · edición en conjunto",
+    "En": "Multiple selection · edit together"
+  },
+  "T047": {
+    "Es": "Selecciona una página para ver sus propiedades.",
+    "En": "Select a page to view its properties."
+  },
+  "T048": {
+    "Es": "Sin selección",
+    "En": "No selection"
+  },
+  "T049": {
+    "Es": "{0} seleccionada(s)",
+    "En": "{0} selected"
+  },
+  "T050": {
+    "Es": "{0} páginas en la composición",
+    "En": "{0} pages in the composition"
+  },
+  "T051": {
+    "Es": "Tu composición",
+    "En": "Your composition"
+  },
+  "T052": {
+    "Es": "Página {0:00}",
+    "En": "Page {0:00}"
+  },
+  "T053": {
+    "Es": "{0} páginas",
+    "En": "{0} pages"
+  },
+  "T054": {
+    "Es": "Abrir documentos",
+    "En": "Open documents"
+  },
+  "T055": {
+    "Es": "Cambiar a inglés",
+    "En": "Switch to English"
+  },
+  "T056": {
+    "Es": "Cambiar a español",
+    "En": "Switch to Spanish"
+  },
+  "T057": {
+    "Es": "Ejemplo listo. Selecciona páginas para componer tu documento.",
+    "En": "Sample ready. Select pages to compose your document."
+  },
+  "T058": {
+    "Es": "Rotación aplicada a la composición.",
+    "En": "Rotation applied to the composition."
+  },
+  "T059": {
+    "Es": "Páginas quitadas. Puedes deshacer el cambio.",
+    "En": "Pages removed. You can undo this change."
+  },
+  "T060": {
+    "Es": "Cambio deshecho.",
+    "En": "Change undone."
+  },
+  "T061": {
+    "Es": "Cambio rehecho.",
+    "En": "Change redone."
+  },
+  "T062": {
+    "Es": "Ejemplo restaurado. Los cambios anteriores se pueden deshacer.",
+    "En": "Sample restored. Previous changes can be undone."
+  },
+  "T063": {
+    "Es": "Orden de salida actualizado.",
+    "En": "Output order updated."
+  },
+  "T064": {
+    "Es": "Página movida a la posición indicada.",
+    "En": "Page moved to the chosen position."
+  },
+  "T065": {
+    "Es": "Esta entrega permite probar la mesa de trabajo con seis páginas de muestra. Puedes seleccionar, mover, girar y quitar páginas, y deshacer o rehacer.\n\nAbrir PDF e imágenes reales y exportar archivos será el siguiente paso, una vez que revises el diseño.",
+    "En": "This version lets you try the workspace with six sample pages. You can select, move, rotate and remove pages, and undo or redo changes.\n\nOpening real PDFs and images and exporting files is the next development stage."
+  },
+  "T066": {
+    "Es": "Ctrl + clic o Mayús + clic: seleccionar varias páginas.\nCtrl + A: seleccionar todas.\nDoble clic o Enter: ampliar una página.\nCtrl + R: girar 90°. Supr: quitar.\nAlt + ← / →: mover la selección.\nCtrl + Z / Ctrl + Y: deshacer / rehacer.\nTab: recorrer controles. Esc: cerrar este diálogo.\n\nLas páginas son ilustraciones de muestra; aún no se procesan PDF reales.",
+    "En": "Ctrl + click or Shift + click: select multiple pages.\nCtrl + A: select all.\nDouble-click or Enter: enlarge a page.\nCtrl + R: rotate 90°. Delete: remove.\nAlt + ← / →: move the selection.\nCtrl + Z / Ctrl + Y: undo / redo.\nTab: move between controls. Esc: close this dialog.\n\nPages are sample illustrations; real PDFs are not processed yet."
+  },
+  "T067": {
+    "Es": "La importación de documentos reales todavía no está habilitada. Ningún archivo se ha abierto, copiado ni modificado.\n\nPrueba el diseño con los documentos de muestra y comparte tus comentarios.",
+    "En": "Real document import is not available yet. No file has been opened, copied or modified.\n\nTry the workspace with the sample documents."
+  },
+  "ExportTitle": {
+    "Es": "Exportar PDF",
+    "En": "Export PDF"
+  },
+  "ExportMode": {
+    "Es": "Operación",
+    "En": "Operation"
+  },
+  "ModeMerge": {
+    "Es": "Composición completa (unir)",
+    "En": "Entire composition (merge)"
+  },
+  "ModeExtract": {
+    "Es": "Extraer páginas a un PDF",
+    "En": "Extract pages to one PDF"
+  },
+  "ModeSingle": {
+    "Es": "Separar: una página por archivo",
+    "En": "Split: one page per file"
+  },
+  "ModeRanges": {
+    "Es": "Separar: un archivo por rango",
+    "En": "Split: one file per range"
+  },
+  "RangeLabel": {
+    "Es": "Páginas o rangos",
+    "En": "Pages or ranges"
+  },
+  "RangeTip": {
+    "Es": "Usa las posiciones de salida: 1, 3, 5-8. En separar por rangos, cada grupo crea un archivo.",
+    "En": "Use output positions: 1, 3, 5-8. When splitting ranges, each group creates a file."
+  },
+  "PrefixLabel": {
+    "Es": "Prefijo para archivos separados",
+    "En": "Prefix for split files"
+  },
+  "ImageSettings": {
+    "Es": "Imágenes a PDF",
+    "En": "Images to PDF"
+  },
+  "FitImage": {
+    "Es": "Tamaño adaptado a la imagen",
+    "En": "Fit size to image"
+  },
+  "Landscape": {
+    "Es": "A4 horizontal",
+    "En": "Landscape A4"
+  },
+  "Margins": {
+    "Es": "Márgenes (mm)",
+    "En": "Margins (mm)"
+  },
+  "ImageSettingsNote": {
+    "Es": "Estos ajustes solo afectan a las imágenes. Se conservan las proporciones y la orientación de las fotos.",
+    "En": "These settings only affect images. Proportions and photo orientation are preserved."
+  },
+  "Cancel": {
+    "Es": "Cancelar",
+    "En": "Cancel"
+  },
+  "ChooseDestination": {
+    "Es": "Elegir destino",
+    "En": "Choose destination"
+  },
+  "NewTitle": {
+    "Es": "Nueva composición",
+    "En": "New composition"
+  },
+  "PageSize": {
+    "Es": "Tamaño de página",
+    "En": "Page size"
+  },
+  "ExportComposition": {
+    "Es": "Guardar la composición en un PDF nuevo",
+    "En": "Save the composition as a new PDF"
+  },
+  "Extract": {
+    "Es": "Extraer",
+    "En": "Extract"
+  },
+  "Split": {
+    "Es": "Separar",
+    "En": "Split"
+  },
+  "Continue": {
+    "Es": "Continuar",
+    "En": "Continue"
+  },
+  "PdfWarning": {
+    "Es": "Se creará un PDF nuevo. Se omiten los campos de formulario y las firmas interactivas; sus valores o apariencias pueden perderse. Las firmas digitales no se conservarán como válidas. No se garantiza conservar marcadores, otras anotaciones ni metadatos. Si necesitas estos elementos, utiliza el original. ¿Continuar?",
+    "En": "A new PDF will be created. Form fields and interactive signatures are omitted; their values or appearance may be lost. Digital signatures will not remain valid. Bookmarks, other annotations and metadata are not guaranteed to be preserved. If you need these features, use the original. Continue?"
+  },
+  "FunctionalHelp": {
+    "Es": "Abre PDF, JPG o PNG, o arrástralos a la ventana.\n\nCada importación se añade al final de la composición.\n\nCtrl + clic / Mayús + clic: seleccionar varias páginas.\n\nDoble clic o Enter: ampliar la página.\n\nCtrl + A: seleccionar todas.\n\nCtrl + R: girar 90°.\n\nSupr: quitar.\n\nAlt + ← / →: mover.\n\nCtrl + Z / Ctrl + Y: deshacer / rehacer.\n\nExportar guarda la composición en un PDF.\n\nExtraer admite selección o números.\n\nSeparar crea un archivo por página o rango.\n\nLos rangos usan la posición actual de salida (de izquierda a derecha y de arriba abajo).\n\nSe trabaja localmente con copias temporales.\n\nLos originales nunca se sobrescriben.\n\nPDF cifrados o restringidos no se admiten.\n\nEsc cancela tareas o cierra diálogos.",
+    "En": "Open PDFs, JPGs or PNGs, or drag them into the window.\n\nEach import is appended to the composition.\n\nCtrl + click / Shift + click: select multiple pages.\n\nDouble-click or Enter: enlarge the page.\n\nCtrl + A: select all.\n\nCtrl + R: rotate 90°.\n\nDelete: remove.\n\nAlt + ← / →: move.\n\nCtrl + Z / Ctrl + Y: undo / redo.\n\nExport saves the composition as one PDF.\n\nExtract accepts a selection or page numbers.\n\nSplit creates one file per page or range.\n\nRanges use the current output positions (left to right, top to bottom).\n\nProcessing is local using temporary copies.\n\nOriginals are never overwritten.\n\nEncrypted or restricted PDFs are not supported.\n\nEsc cancels tasks or closes dialogs."
+  },
+  "OperationMessage1": {
+    "Es": "Formato no compatible. Usa PDF, JPG o PNG.",
+    "En": "Unsupported format. Use PDF, JPG or PNG."
+  },
+  "OperationMessage2": {
+    "Es": "El archivo supera el límite de 256 MB.",
+    "En": "The file exceeds the 256 MB limit."
+  },
+  "OperationMessage3": {
+    "Es": "El PDF está cifrado o restringido. Esta versión no abre documentos protegidos.",
+    "En": "The PDF is encrypted or restricted. This version does not open protected documents."
+  },
+  "OperationMessage4": {
+    "Es": "El PDF debe tener entre 1 y 2000 páginas.",
+    "En": "The PDF must have between 1 and 2000 pages."
+  },
+  "OperationMessage5": {
+    "Es": "No se pudo abrir el PDF. Puede estar dañado, protegido o usar un formato no compatible.",
+    "En": "Could not open the PDF. It may be damaged, protected or use an unsupported format."
+  },
+  "OperationMessage6": {
+    "Es": "La imagen supera el límite de 40 megapíxeles.",
+    "En": "The image exceeds the 40-megapixel limit."
+  },
+  "OperationMessage7": {
+    "Es": "Introduce páginas o rangos, por ejemplo: 1, 3, 5-8.",
+    "En": "Enter pages or ranges, for example: 1, 3, 5-8."
+  },
+  "OperationMessage8": {
+    "Es": "Hay páginas repetidas o rangos superpuestos.",
+    "En": "There are duplicate pages or overlapping ranges."
+  },
+  "OperationMessage9": {
+    "Es": "Rango inválido. Usa números de la composición, dentro del documento y en orden ascendente.",
+    "En": "Invalid range. Use composition page numbers within the document and ascending ranges."
+  },
+  "OperationMessage10": {
+    "Es": "La salida debe tener extensión .pdf.",
+    "En": "The output must use the .pdf extension."
+  },
+  "OperationMessage11": {
+    "Es": "La salida no puede reemplazar un documento original.",
+    "En": "The output cannot replace an original document."
+  },
+  "OperationMessage12": {
+    "Es": "Dos archivos de salida tienen el mismo nombre.",
+    "En": "Two output files have the same name."
+  },
+  "OperationMessage13": {
+    "Es": "No se puede exportar un documento sin páginas.",
+    "En": "Cannot export a document with no pages."
+  },
+  "OperationMessage14": {
+    "Es": "El margen debe estar entre 0 y 70 mm.",
+    "En": "Margins must be between 0 and 70 mm."
+  },
+  "OperationMessage15": {
+    "Es": "Abre documentos reales antes de exportar.",
+    "En": "Open real documents before exporting."
+  },
+  "OperationMessage16": {
+    "Es": "El archivo de salida ya existe. Confirma el reemplazo o elige otro nombre.",
+    "En": "The output file already exists. Confirm replacement or choose another name."
+  },
+  "OperationMessage17": {
+    "Es": "La salida cambió durante la operación. Elige otro nombre e inténtalo de nuevo.",
+    "En": "The output changed during processing. Choose another name and try again."
+  },
+  "OperationMessage18": {
+    "Es": "La exportación falló y no se pudieron revertir todas las salidas. Revisa la carpeta; se conservaron las copias de respaldo.",
+    "En": "Export failed and some outputs could not be rolled back. Check the folder; backup copies were retained."
+  },
+  "OperationMessage19": {
+    "Es": "Introduce un prefijo de archivo válido.",
+    "En": "Enter a valid filename prefix."
+  },
+  "OperationMessage20": {
+    "Es": "Posición de salida · {0}",
+    "En": "Output position · {0}"
+  },
+  "OperationMessage21": {
+    "Es": "Documentos cargados.",
+    "En": "Documents loaded."
+  },
+  "OperationMessage22": {
+    "Es": "PDF e imágenes|*.pdf;*.jpg;*.jpeg;*.png",
+    "En": "PDFs and images|*.pdf;*.jpg;*.jpeg;*.png"
+  },
+  "OperationMessage23": {
+    "Es": "Abre un máximo de 100 archivos a la vez.",
+    "En": "Open up to 100 files at a time."
+  },
+  "OperationMessage24": {
+    "Es": "Abriendo documentos…",
+    "En": "Opening documents…"
+  },
+  "OperationMessage25": {
+    "Es": "La composición admite hasta 2000 páginas.",
+    "En": "The composition supports up to 2000 pages."
+  },
+  "OperationMessage26": {
+    "Es": "Se descartarán la composición y su historial. Los originales no se modificarán.",
+    "En": "The composition and its history will be discarded. Originals will not be modified."
+  },
+  "OperationMessage27": {
+    "Es": "Generando previsualización…",
+    "En": "Generating preview…"
+  },
+  "OperationMessage28": {
+    "Es": "No se pudo generar la miniatura.",
+    "En": "Could not generate the thumbnail."
+  },
+  "OperationMessage29": {
+    "Es": "Operación cancelada. No se completó la salida.",
+    "En": "Operation canceled. The output was not completed."
+  },
+  "OperationMessage30": {
+    "Es": "No se pudo leer o escribir. Revisa los permisos y elige una carpeta accesible.",
+    "En": "Could not read or write. Check permissions and choose an accessible folder."
+  },
+  "OperationMessage31": {
+    "Es": "No se pudo leer o escribir. El archivo puede estar en uso o la unidad no estar disponible.",
+    "En": "Could not read or write. The file may be in use or the drive unavailable."
+  },
+  "OperationMessage32": {
+    "Es": "No se pudo completar la operación. El documento puede estar dañado o no ser compatible.",
+    "En": "Could not complete the operation. The document may be damaged or unsupported."
+  },
+  "OperationMessage33": {
+    "Es": "Resultado",
+    "En": "Result"
+  },
+  "OperationMessage34": {
+    "Es": "Cancelando…",
+    "En": "Canceling…"
+  },
+  "OperationMessage35": {
+    "Es": "Guardar PDF",
+    "En": "Save PDF"
+  },
+  "OperationMessage36": {
+    "Es": "Elegir carpeta de salida",
+    "En": "Choose output folder"
+  },
+  "OperationMessage37": {
+    "Es": "No se pudo validar la carpeta de salida.",
+    "En": "Could not validate the output folder."
+  },
+  "OperationMessage38": {
+    "Es": "Limitaciones del PDF",
+    "En": "PDF limitations"
+  },
+  "OperationMessage39": {
+    "Es": "Se reemplazarán {0} archivos. Esta decisión no afecta a los originales.",
+    "En": "{0} files will be replaced. Originals will not be affected."
+  },
+  "OperationMessage40": {
+    "Es": "Reemplazar archivos",
+    "En": "Replace files"
+  },
+  "OperationMessage41": {
+    "Es": "Exportando PDF…",
+    "En": "Exporting PDF…"
+  },
+  "OperationMessage42": {
+    "Es": "Exportación completada",
+    "En": "Export complete"
+  },
+  "OperationMessage43": {
+    "Es": "Archivos PDF guardados: {0}.",
+    "En": "PDF files saved: {0}."
+  },
+  "OperationMessage44": {
+    "Es": "Imagen",
+    "En": "Image"
+  }
+}

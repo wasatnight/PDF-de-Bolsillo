@@ -1,0 +1,29 @@
+<Window x:Class="PdfDeBolsillo.PagePreviewWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:loc="clr-namespace:PdfDeBolsillo.Services"
+ Title="{loc:Loc T039}" Icon="Assets/App.ico" Width="830" Height="860" MinWidth="540" MinHeight="480"
+ Background="#E9E4DA" Foreground="#292B29" FontFamily="Segoe UI Variable Text, Segoe UI" FontSize="13"
+ WindowStartupLocation="CenterOwner" PreviewKeyDown="WindowKeyDown">
+ <Grid>
+  <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <Border Background="#FFFCF7" BorderBrush="#DAD4C9" BorderThickness="0,0,0,1" Padding="22,16">
+   <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+    <StackPanel Margin="0,0,14,0"><TextBlock Text="{Binding Source}" FontSize="18" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"/><TextBlock Text="{Binding OriginalLabel}" Foreground="#69665F" Margin="0,4,0,0"/></StackPanel>
+    <Button Grid.Column="1" Content="{loc:Loc T038}" Click="CloseClick" VerticalAlignment="Center" ToolTip="{loc:Loc T040}"/>
+   </Grid>
+  </Border>
+  <Grid Grid.Row="1" Margin="24">
+   <Viewbox x:Name="FitView" Stretch="Uniform">
+    <Border Background="#FFFEFA" BorderBrush="#D1CABC" BorderThickness="1">
+     <Image Source="{Binding Thumbnail}" Width="{Binding WidthPoints}" Height="{Binding HeightPoints}" Stretch="Uniform" AutomationProperties.Name="{loc:Loc T041}">
+      <Image.LayoutTransform><RotateTransform Angle="{Binding Rotation}"/></Image.LayoutTransform>
+     </Image>
+    </Border>
+   </Viewbox>
+  </Grid>
+  <Border Grid.Row="2" Background="#FFFCF7" Padding="22,12" BorderBrush="#DAD4C9" BorderThickness="0,1,0,0">
+   <Grid><TextBlock Text="{Binding SourceKindLabel}" FontSize="11" Foreground="#69665F"/><TextBlock Text="{Binding RotationLabel}" HorizontalAlignment="Right" FontSize="11" Foreground="#69665F"/></Grid>
+  </Border>
+ </Grid>
+</Window>
+
+
+

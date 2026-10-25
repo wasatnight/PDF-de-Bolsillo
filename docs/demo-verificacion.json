@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "originalsIntact": true,
+  "files": [
+    {
+      "name": "composicion.pdf",
+      "pages": 7
+    },
+    {
+      "name": "extraccion.pdf",
+      "pages": 3
+    },
+    {
+      "name": "rango-1.pdf",
+      "pages": 2
+    },
+    {
+      "name": "rango-2.pdf",
+      "pages": 3
+    },
+    {
+      "name": "rango-3.pdf",
+      "pages": 2
+    }
+  ],
+  "frames": 256,
+  "fps": 8,
+  "speed": 2,
+  "chapters": [
+    {
+      "seconds": 0.4357105,
+      "title": "01 \u00B7 PDF de Bolsillo: documentos locales, originales intactos"
+    },
+    {
+      "seconds": 3.3340606,
+      "title": "02 \u00B7 Cargar varios PDF e im\u00E1genes en una composici\u00F3n"
+    },
+    {
+      "seconds": 6.5454766,
+      "title": "03 \u00B7 Seleccionar varias p\u00E1ginas"
+    },
+    {
+      "seconds": 9.1565668,
+      "title": "04 \u00B7 Girar la selecci\u00F3n; los cambios solo afectan a la salida"
+    },
+    {
+      "seconds": 12.172258,
+      "title": "05 \u00B7 Reordenar con las flechas de la barra"
+    },
+    {
+      "seconds": 15.1869738,
+      "title": "06 \u00B7 Deshacer y conservar el historial"
+    },
+    {
+      "seconds": 17.5236848,
+      "title": "07 \u00B7 Previsualizaci\u00F3n ampliada de una imagen"
+    },
+    {
+      "seconds": 20.83754,
+      "title": "08 \u00B7 English / Espa\u00F1ol: cambio de idioma inmediato"
+    },
+    {
+      "seconds": 24.8601013,
+      "title": "09 \u00B7 Ayuda con instrucciones separadas en p\u00E1rrafos"
+    },
+    {
+      "seconds": 27.9287848,
+      "title": "10 \u00B7 Extraer la selecci\u00F3n o escribir p\u00E1ginas y rangos"
+    },
+    {
+      "seconds": 31.4412176,
+      "title": "11 \u00B7 Separar: un archivo por p\u00E1gina o por rango"
+    },
+    {
+      "seconds": 34.9987694,
+      "title": "12 \u00B7 Im\u00E1genes a PDF: tama\u00F1o adaptado, A4 y m\u00E1rgenes"
+    },
+    {
+      "seconds": 38.2254241,
+      "title": "13 \u00B7 Aviso antes de reconstruir documentos PDF"
+    },
+    {
+      "seconds": 41.6836943,
+      "title": "14 \u00B7 Cinco PDF exportados; recuentos y originales verificados"
+    },
+    {
+      "seconds": 45.2913911,
+      "title": "PDF de Bolsillo \u00B7 unir, separar, extraer e im\u00E1genes a PDF \u00B7 demostraci\u00F3n 2\u00D7"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<Window x:Class="PdfDeBolsillo.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:loc="clr-namespace:PdfDeBolsillo.Services"
+ Title="PDF de Bolsillo" Icon="Assets/App.ico" Width="1320" Height="900" MinWidth="840" MinHeight="640" Background="#F3F0E8" Foreground="#292B29" FontFamily="Segoe UI Variable Text, Segoe UI" FontSize="13" WindowStartupLocation="CenterScreen" AllowDrop="True" Drop="WindowDrop" DragOver="WindowDragOver" SizeChanged="WindowResized" PreviewKeyDown="WindowKeyDown">
+ <Window.Resources><BooleanToVisibilityConverter x:Key="Bool"/></Window.Resources>
+ <Grid Background="#F3F0E8">
+ <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+ <!-- Una cabecera editorial, sin navegación lateral de aplicación. -->
+ <Border x:Name="HeaderRoot" Background="#FFFCF7" BorderBrush="#DAD4C9" BorderThickness="0,0,0,1" Padding="28,20">
+  <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+   <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+    <Border Width="36" Height="42" Background="#AD3E20" CornerRadius="3" Margin="0,0,13,0"><TextBlock Text="p." Foreground="White" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+    <StackPanel><TextBlock Text="PDF de Bolsillo" FontFamily="Segoe UI Variable Display, Segoe UI" FontSize="23" FontWeight="SemiBold"/><TextBlock Text="{loc:Loc T001}" FontSize="9" Foreground="#69665F" Margin="1,3,0,0"/></StackPanel>
+   </StackPanel>
+   <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+    <Button x:Name="LanguageButton" Content="{Binding ToggleLabel, Source={x:Static loc:Localizer.Current}}" ToolTip="{Binding ToggleHint, Source={x:Static loc:Localizer.Current}}" Click="ToggleLanguageClick" Padding="11,9" MinWidth="70"/>
+    <Button Content="{loc:Loc T002}" Click="HelpClick" ToolTip="{loc:Loc T003}"/>
+    <Button Content="{loc:Loc T004}" Click="OpenClick" Style="{StaticResource Primary}" ToolTip="{loc:Loc T005}"/>
+   </StackPanel>
+  </Grid>
+ </Border>
+ <Grid x:Name="WorkspaceRoot" Grid.Row="1">
+  <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition x:Name="InspectorColumn" Width="268"/></Grid.ColumnDefinitions>
+  <Grid Margin="28,24,24,0">
+   <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+   <Grid Margin="0,0,0,20"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+    <Button Grid.Column="1" Content="{loc:Loc NewTitle}" Click="NewClick" VerticalAlignment="Center" Background="Transparent" ToolTip="{loc:Loc NewTitle}"/>
+   </Grid>
+   <Border Grid.Row="1" Background="#E9E4DA" CornerRadius="5" Padding="9" Margin="0,0,0,14">
+    <WrapPanel>
+     <Button Content="↶" FontSize="19" Padding="10,3" Command="{Binding Undo}" ToolTip="{loc:Loc T008}" AutomationProperties.Name="{loc:Loc T009}"/>
+     <Button Content="↷" FontSize="19" Padding="10,3" Command="{Binding Redo}" ToolTip="{loc:Loc T010}" AutomationProperties.Name="{loc:Loc T011}"/>
+     <Border Width="1" Height="23" Background="#CFC7BA" Margin="4,0,12,0"/>
+     <Button Content="{loc:Loc T012}" Command="{Binding Rotate}" ToolTip="{loc:Loc T013}"/>
+     <Button Content="←" Command="{Binding Previous}" ToolTip="{loc:Loc T014}" AutomationProperties.Name="{loc:Loc T015}"/>
+     <Button Content="→" Command="{Binding Next}" ToolTip="{loc:Loc T016}" AutomationProperties.Name="{loc:Loc T017}"/>
+     <Button Content="{loc:Loc T018}" Command="{Binding Remove}" ToolTip="{loc:Loc T019}"/>
+     <TextBlock Text="{Binding SelectionCount}" FontSize="11" Foreground="#69665F" VerticalAlignment="Center" Margin="8,5"/>
+    </WrapPanel>
+   </Border>
+   <Grid Grid.Row="2">
+    <ListBox x:Name="PageList" ItemsSource="{Binding Pages}" SelectionMode="Extended" SelectionChanged="SelectionChanged"
+      Background="Transparent" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"
+      ScrollViewer.CanContentScroll="False" PreviewMouseLeftButtonDown="PageMouseDown" PreviewMouseMove="PageMouseMove" Drop="PageDrop"
+      AutomationProperties.Name="{loc:Loc T020}">
+     <ListBox.ItemsPanel><ItemsPanelTemplate><WrapPanel/></ItemsPanelTemplate></ListBox.ItemsPanel>
+     <ListBox.ItemContainerStyle><Style TargetType="ListBoxItem">
+      <Setter Property="Margin" Value="0,0,17,22"/><Setter Property="Padding" Value="9"/><Setter Property="BorderThickness" Value="2"/><Setter Property="BorderBrush" Value="Transparent"/><Setter Property="Background" Value="Transparent"/>
+      <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+      <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ListBoxItem"><Border x:Name="Frame" CornerRadius="6" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}"><ContentPresenter/></Border><ControlTemplate.Triggers>
+       <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Frame" Property="Background" Value="#EAE4D9"/></Trigger>
+       <Trigger Property="IsSelected" Value="True"><Setter TargetName="Frame" Property="Background" Value="#F4E1D5"/><Setter TargetName="Frame" Property="BorderBrush" Value="#AD3E20"/></Trigger>
+       <Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter TargetName="Frame" Property="BorderBrush" Value="#205CB8"/></Trigger>
+      </ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter>
+      <Setter Property="AutomationProperties.Name" Value="{Binding AccessibleName}"/>
+     </Style></ListBox.ItemContainerStyle>
+     <ListBox.ItemTemplate><DataTemplate>
+      <StackPanel Width="174">
+       <Border Background="#FFFDF8" BorderBrush="#D9D3C8" BorderThickness="1" Height="244">
+        <Grid ClipToBounds="True"><TextBlock Text="{Binding PreviewPlaceholder}" TextWrapping="Wrap" Foreground="#69665F" Margin="16" HorizontalAlignment="Center" VerticalAlignment="Center"/><Image Loaded="ThumbnailLoaded" Source="{Binding Thumbnail}" Stretch="Uniform" RenderTransformOrigin="0.5,0.5"><Image.LayoutTransform><RotateTransform Angle="{Binding Rotation}"/></Image.LayoutTransform></Image></Grid>
+       </Border>
+       <TextBlock Text="{Binding Source}" FontSize="12" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" Margin="0,10,0,0" ToolTip="{Binding Source}"/>
+       <TextBlock Text="{Binding OriginalLabel}" Foreground="#69665F" FontSize="10" Margin="0,3,0,0"/>
+      </StackPanel>
+     </DataTemplate></ListBox.ItemTemplate>
+    </ListBox>
+    <Border Background="#F3F0E8" Visibility="{Binding IsEmpty, Converter={StaticResource Bool}}" Padding="32" VerticalAlignment="Center">
+     <StackPanel HorizontalAlignment="Center" MaxWidth="340">
+      <TextBlock Text="{loc:Loc T021}" FontFamily="Segoe UI Variable Display, Segoe UI" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"/>
+      <TextBlock Text="{loc:Loc T022}" Style="{StaticResource Muted}" TextAlignment="Center" Margin="0,14,0,22"/>
+      <Button Content="{loc:Loc T004}" Click="OpenClick" Style="{StaticResource Primary}"/>
+     </StackPanel>
+    </Border>
+   </Grid>
+  </Grid>
+  <Border Grid.Column="1" BorderBrush="#DAD4C9" BorderThickness="1,0,0,0" Background="#FAF7F0">
+   <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+    <StackPanel Margin="23,27">
+     <TextBlock Text="{loc:Loc T024}" Style="{StaticResource Eyebrow}"/>
+     <TextBlock Text="{Binding SelectionSource}" Style="{StaticResource Muted}" MinHeight="48"/>
+     <Separator/>
+     <TextBlock Text="{loc:Loc T025}" Style="{StaticResource Eyebrow}"/>
+     <Grid Margin="0,3,0,13"><TextBlock Text="{loc:Loc PageSize}"/><TextBlock Text="{Binding PageSizeText}" HorizontalAlignment="Right"/></Grid>
+     <Grid><TextBlock Text="{loc:Loc T027}"/><TextBlock Text="{Binding RotationText}" HorizontalAlignment="Right" FontWeight="SemiBold"/></Grid>
+     <Separator/>
+     <TextBlock Text="{loc:Loc T028}" Style="{StaticResource Eyebrow}"/>
+     <TextBlock Text="{loc:Loc T029}" Style="{StaticResource Muted}"/>
+     <TextBlock Text="{loc:Loc T030}" Style="{StaticResource Muted}" Margin="0,11,0,0"/>
+     <Separator/>
+     <Border BorderBrush="#D9C7B6" BorderThickness="1" CornerRadius="5" Background="#F2E9DD" Padding="13">
+      <StackPanel><TextBlock Text="{loc:Loc T031}" FontWeight="SemiBold" TextWrapping="Wrap" FontSize="12"/><TextBlock Text="{loc:Loc T032}" Style="{StaticResource Muted}" Margin="0,7,0,0"/></StackPanel>
+     </Border>
+     <TextBlock Text="{loc:Loc ExportTitle}" Style="{StaticResource Eyebrow}" Margin="0,25,0,10"/>
+     <TextBlock Text="{Binding OutputPosition}" Style="{StaticResource Muted}"/>
+     
+     <Button Content="{loc:Loc T036}" IsEnabled="{Binding CanExport}" Click="ExportClick" Style="{StaticResource Primary}" ToolTip="{loc:Loc ExportComposition}"/>
+     <WrapPanel Margin="0,10,0,0"><Button Content="{loc:Loc Extract}" IsEnabled="{Binding CanExport}" Click="ExtractClick"/><Button Content="{loc:Loc Split}" IsEnabled="{Binding CanExport}" Click="SplitClick"/></WrapPanel>
+    </StackPanel>
+   </ScrollViewer>
+  </Border>
+ </Grid>
+ <!-- Diálogo propio: el alcance de la maqueta siempre queda visible. -->
+ <Border x:Name="DialogOverlay" Grid.RowSpan="2" Background="#80292B29" Visibility="Collapsed">
+  <Border Width="470" Padding="30" Background="#FFFCF7" CornerRadius="9" HorizontalAlignment="Center" VerticalAlignment="Center">
+   <StackPanel><TextBlock x:Name="DialogTitle" FontWeight="SemiBold" FontSize="18" TextWrapping="Wrap"/><ScrollViewer MaxHeight="330" VerticalScrollBarVisibility="Auto" Margin="0,17,0,24"><TextBlock x:Name="DialogBody" TextWrapping="Wrap" Foreground="#595950" LineHeight="22"/></ScrollViewer><Button x:Name="DialogConfirm" Content="{loc:Loc Continue}" Click="ConfirmDialog" Visibility="Collapsed" Style="{StaticResource Primary}" HorizontalAlignment="Left" Margin="0,0,0,10"/><Button x:Name="DialogClose" Content="{loc:Loc T038}" Click="CloseDialog" Style="{StaticResource Primary}" HorizontalAlignment="Left"/></StackPanel>
+  </Border>
+ </Border>
+ <Border x:Name="BusyOverlay" Grid.RowSpan="2" Background="#80292B29" Visibility="Collapsed">
+  <Border Background="#FFFCF7" CornerRadius="8" Padding="28" Width="420" HorizontalAlignment="Center" VerticalAlignment="Center">
+   <StackPanel><TextBlock x:Name="BusyTitle" FontSize="18" FontWeight="SemiBold" TextWrapping="Wrap"/>
+    <ProgressBar x:Name="BusyProgress" Minimum="0" Maximum="100" Height="8" Foreground="#AD3E20" Margin="0,22"/>
+    <Button Content="{loc:Loc Cancel}" Click="CancelOperation" HorizontalAlignment="Left"/>
+   </StackPanel>
+  </Border>
+ </Border>
+ </Grid>
+</Window>
+
+
+
+
+
+
+
+
